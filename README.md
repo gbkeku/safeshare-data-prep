@@ -1,7 +1,5 @@
 # SafeShare: Data Preparation Summary (Notebook 1)
 
-Godbless Keku, November 2026
-
 This summary follows the three parts of the Data Prep criterion: data cleanup, feature engineering and data insights. Every number comes from Notebook 1 (sections 10 and 14); the notebook's own charts are in sections 11 to 14.
 
 SafeShare finds sensitive text in screenshots and messages so it can be hidden before sharing. The data is [nvidia/Nemotron-PII](https://huggingface.co/datasets/nvidia/Nemotron-PII) (CC BY 4.0), 200,000 synthetic English records, loaded at a pinned revision with an unchanged raw copy and SHA-256 manifests. I mapped 11 of its 55 labels to seven categories: PERSON, EMAIL, PHONE, ACCOUNT_NUMBER, PAYMENT_CARD (cards and CVVs), SSN and PASSWORD (passwords, PINs and API keys). The other 44, such as street addresses and dates of birth, stay as ordinary text: out of scope, and the app tells users so.
