@@ -1,0 +1,76 @@
+{
+  "dataset_id": "nvidia/Nemotron-PII",
+  "dataset_revision": "b70ffaf5ff39e079776134c5bf4381f00a9fd1ed",
+  "model_id": "gravitee-io/bert-small-pii-detection",
+  "model_revision": "f8c27a85c51c0168f07b9dcf00265bf0a4097939",
+  "seed": 42,
+  "validation_fraction": 0.2,
+  "test_size": 10000,
+  "max_seq_length": 256,
+  "window_stride": 64,
+  "chat_examples": false,
+  "max_words_per_chunk": 120,
+  "overlap_words": 16,
+  "label_map": {
+    "first_name": "PERSON",
+    "last_name": "PERSON",
+    "email": "EMAIL",
+    "phone_number": "PHONE",
+    "account_number": "ACCOUNT_NUMBER",
+    "credit_debit_card": "PAYMENT_CARD",
+    "ssn": "SSN",
+    "password": "PASSWORD",
+    "pin": "PASSWORD",
+    "api_key": "PASSWORD",
+    "cvv": "PAYMENT_CARD"
+  },
+  "image": {
+    "seed": 42,
+    "train_size": 1500,
+    "validation_size": 200,
+    "test_size": 300,
+    "min_entities_per_label": 100,
+    "negative_fraction": 0.15,
+    "font_sizes": [
+      14,
+      18,
+      22,
+      28
+    ],
+    "jpeg_qualities": [
+      40,
+      60,
+      75,
+      90
+    ],
+    "fonts": {
+      "sans": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+      "serif": "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+      "mono": "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+    },
+    "test_only_font": "mono",
+    "test_only_layout": "ticket",
+    "layouts": [
+      "dialog",
+      "log",
+      "chat",
+      "form",
+      "ticket"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "scale_factors": [
+      1.0,
+      0.85
+    ],
+    "blur_radii": [
+      0.0,
+      0.5
+    ],
+    "ocr_language": "eng",
+    "tesseract_psm": 6,
+    "ocr_timeout_seconds": 30
+  }
+}

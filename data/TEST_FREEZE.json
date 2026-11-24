@@ -1,0 +1,19 @@
+{
+  "schema": "safeshare-gate-a-test-freeze-v1",
+  "status": "document-file-integrity-verified; final-evaluation-config-not-yet-frozen",
+  "source": "user-uploaded executed Notebook 1 manifest and docs/test.jsonl",
+  "prepared_manifest_release_id": "safeshare-dd983807cd5d6d89",
+  "prepared_run_id_from_filename": "20261109T224019Z-fe313d60",
+  "test_file": "docs/test.jsonl",
+  "rows": 10000,
+  "size_bytes": 81226057,
+  "sha256": "51fbb4843e6b5f568b9d45cfea2af77cdba491d76109f7ed5ecb06b8f611bd3c",
+  "manifest_reported_sft_test_sha256": "c300031878cfc342a3041bf23c0399a5115311473666d3b33f85c10fa256a4f5",
+  "manifest_reported_tokenized_test_sha256": "5275dc591c393a63472b32f905cfb3779ca923888d2ae5229eed41c352c64cbb",
+  "no_test_model_evaluation_performed_during_documentation": true,
+  "limitations": [
+    "test-only SHA256 verifies bytes, not semantic leakage",
+    "specific evaluation code commit and prompt/windowing config must still be frozen",
+    "image-specific test manifest not independently verified"
+  ]
+}

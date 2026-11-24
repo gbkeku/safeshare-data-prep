@@ -1,0 +1,1908 @@
+{
+  "created_utc": "2026-11-11T04:53:47.039975+00:00",
+  "image_summary": {
+    "evaluation_policy": {
+      "jpeg_role": "paired robustness",
+      "primary_format": "png",
+      "test_only_font": "mono",
+      "test_only_layout": "ticket"
+    },
+    "font_sizes": [
+      14,
+      18,
+      22,
+      28
+    ],
+    "fonts": {
+      "mono": "DejaVuSansMono.ttf",
+      "sans": "DejaVuSans.ttf",
+      "serif": "DejaVuSerif.ttf"
+    },
+    "limitations": [
+      "Synthetic rendered text; real-app screenshots are a separate test set.",
+      "PNG and JPEG are paired copies of the same page, not independent samples.",
+      "CER and WER are case-sensitive, whitespace-normalised edit distances.",
+      "word_recall: share of reference words found in the OCR output (case-sensitive, counted as a bag of words).",
+      "Sensitive text 'located' = every word piece of the entity has an OCR word centred on it; 'read exact' = those OCR words also spell the original text. Counted per page."
+    ],
+    "ocr_by_condition": {
+      "test|jpeg|blur=0.0": {
+        "cer": 0.0286081535299657,
+        "images": 197,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 568,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9242957746478874,
+        "wer": 0.042680262199563,
+        "word_recall": 0.96494294731731
+      },
+      "test|jpeg|blur=0.5": {
+        "cer": 0.03434904465119851,
+        "images": 193,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 673,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8662704309063893,
+        "wer": 0.04780247830324407,
+        "word_recall": 0.960690583375876
+      },
+      "test|jpeg|font=mono": {
+        "cer": 0.029589052050741225,
+        "images": 251,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 840,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8678571428571429,
+        "wer": 0.047232152529520094,
+        "word_recall": 0.963456469143827
+      },
+      "test|jpeg|font=sans": {
+        "cer": 0.0527098188414926,
+        "images": 56,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 157,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9171974522292994,
+        "wer": 0.03765839728716759,
+        "word_recall": 0.9662680706764234
+      },
+      "test|jpeg|font=serif": {
+        "cer": 0.02448466079550953,
+        "images": 83,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 244,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9631147540983607,
+        "wer": 0.04408772326475243,
+        "word_recall": 0.9583992765091567
+      },
+      "test|jpeg|font_size=14": {
+        "cer": 0.04067250578878486,
+        "images": 85,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 378,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.746031746031746,
+        "wer": 0.08667424119461127,
+        "word_recall": 0.9259048855705243
+      },
+      "test|jpeg|font_size=18": {
+        "cer": 0.029450239250920857,
+        "images": 71,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 261,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9348659003831418,
+        "wer": 0.038020960272971,
+        "word_recall": 0.9722154521082135
+      },
+      "test|jpeg|font_size=22": {
+        "cer": 0.018989877407120537,
+        "images": 101,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 302,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9735099337748344,
+        "wer": 0.02788193442938179,
+        "word_recall": 0.9774060186520527
+      },
+      "test|jpeg|font_size=28": {
+        "cer": 0.03478030837448352,
+        "images": 133,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 300,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.96,
+        "wer": 0.021314545616694908,
+        "word_recall": 0.9827878355480246
+      },
+      "test|jpeg|layout=chat": {
+        "cer": 0.037585713761871586,
+        "images": 39,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 120,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9666666666666667,
+        "wer": 0.032350639186016175,
+        "word_recall": 0.9773023741194886
+      },
+      "test|jpeg|layout=dialog": {
+        "cer": 0.026866024932933566,
+        "images": 38,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 153,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9607843137254902,
+        "wer": 0.03450149415919587,
+        "word_recall": 0.9687584895408856
+      },
+      "test|jpeg|layout=form": {
+        "cer": 0.023390081421169506,
+        "images": 42,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 140,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8928571428571429,
+        "wer": 0.04649721016738995,
+        "word_recall": 0.9615623062616243
+      },
+      "test|jpeg|layout=log": {
+        "cer": 0.020500370894868163,
+        "images": 37,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 126,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9285714285714286,
+        "wer": 0.039482961222091655,
+        "word_recall": 0.9649823736780259
+      },
+      "test|jpeg|layout=ticket": {
+        "cer": 0.034602523302586306,
+        "images": 234,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 702,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8589743589743589,
+        "wer": 0.049541787420693977,
+        "word_recall": 0.9595833006971097
+      },
+      "test|jpeg|scale=0.85": {
+        "cer": 0.02998885884799069,
+        "images": 183,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 586,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9402730375426621,
+        "wer": 0.046023435552231366,
+        "word_recall": 0.9604587384692097
+      },
+      "test|jpeg|scale=1.0": {
+        "cer": 0.03297646137202969,
+        "images": 207,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 655,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.850381679389313,
+        "wer": 0.0446416444062118,
+        "word_recall": 0.9648662108932856
+      },
+      "test|jpeg|theme=dark": {
+        "cer": 0.032133158009501846,
+        "images": 200,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 636,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.949685534591195,
+        "wer": 0.04407739061847538,
+        "word_recall": 0.9637637451862849
+      },
+      "test|jpeg|theme=light": {
+        "cer": 0.031026046721889085,
+        "images": 190,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 605,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8330578512396695,
+        "wer": 0.046578269949973286,
+        "word_recall": 0.9617271358492399
+      },
+      "test|png|blur=0.0": {
+        "cer": 0.027920787995848313,
+        "images": 197,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 568,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9348591549295775,
+        "wer": 0.040349599417334306,
+        "word_recall": 0.9667394998786113
+      },
+      "test|png|blur=0.5": {
+        "cer": 0.032742932466502006,
+        "images": 193,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 673,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8841010401188707,
+        "wer": 0.04139787441407156,
+        "word_recall": 0.966677495707059
+      },
+      "test|png|font=mono": {
+        "cer": 0.02803962533862471,
+        "images": 251,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 840,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8845238095238095,
+        "wer": 0.042682266276676414,
+        "word_recall": 0.9682952370635178
+      },
+      "test|png|font=sans": {
+        "cer": 0.05243266396230694,
+        "images": 56,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 157,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9171974522292994,
+        "wer": 0.03515973585579154,
+        "word_recall": 0.9671604497590577
+      },
+      "test|png|font=serif": {
+        "cer": 0.024000774218523178,
+        "images": 83,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 244,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9795081967213115,
+        "wer": 0.038887632828397016,
+        "word_recall": 0.9614515035044088
+      },
+      "test|png|font_size=14": {
+        "cer": 0.03845766636464311,
+        "images": 85,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 378,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.7698412698412699,
+        "wer": 0.07612400584320728,
+        "word_recall": 0.9358058756695342
+      },
+      "test|png|font_size=18": {
+        "cer": 0.0284175014630452,
+        "images": 71,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 261,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9501915708812261,
+        "wer": 0.03485254691689008,
+        "word_recall": 0.9741652449427248
+      },
+      "test|png|font_size=22": {
+        "cer": 0.018308805854544485,
+        "images": 101,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 302,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9768211920529801,
+        "wer": 0.02759350062493991,
+        "word_recall": 0.9779828862609364
+      },
+      "test|png|font_size=28": {
+        "cer": 0.03425123450569384,
+        "images": 133,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 300,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9733333333333334,
+        "wer": 0.018906626237403013,
+        "word_recall": 0.9847498439311514
+      },
+      "test|png|layout=chat": {
+        "cer": 0.03443218070477797,
+        "images": 39,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 120,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9833333333333333,
+        "wer": 0.026871901904513436,
+        "word_recall": 0.9801721888859901
+      },
+      "test|png|layout=dialog": {
+        "cer": 0.025445794540003158,
+        "images": 38,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 153,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9869281045751634,
+        "wer": 0.02743819614235262,
+        "word_recall": 0.9774517794077696
+      },
+      "test|png|layout=form": {
+        "cer": 0.022916358253145818,
+        "images": 42,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 140,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8928571428571429,
+        "wer": 0.045670593097747465,
+        "word_recall": 0.9613556519942137
+      },
+      "test|png|layout=log": {
+        "cer": 0.020062040596129205,
+        "images": 37,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 126,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9444444444444444,
+        "wer": 0.03807285546415981,
+        "word_recall": 0.9656874265569918
+      },
+      "test|png|layout=ticket": {
+        "cer": 0.033525569573903256,
+        "images": 234,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 702,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8732193732193733,
+        "wer": 0.04448970000783269,
+        "word_recall": 0.964322080363437
+      },
+      "test|png|scale=0.85": {
+        "cer": 0.02851992988880137,
+        "images": 183,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 586,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9488054607508533,
+        "wer": 0.03969085016205435,
+        "word_recall": 0.9664422837197706
+      },
+      "test|png|scale=1.0": {
+        "cer": 0.032081172827992686,
+        "images": 207,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 655,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8702290076335878,
+        "wer": 0.04197038982206728,
+        "word_recall": 0.9669488839588899
+      },
+      "test|png|theme=dark": {
+        "cer": 0.030765367816623607,
+        "images": 200,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 636,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9575471698113207,
+        "wer": 0.039391268036932214,
+        "word_recall": 0.9679394979817195
+      },
+      "test|png|theme=light": {
+        "cer": 0.03006873994495486,
+        "images": 190,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 605,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8545454545454545,
+        "wer": 0.042449851862645105,
+        "word_recall": 0.9654184273155568
+      },
+      "train|jpeg|blur=0.0": {
+        "cer": 0.03273866997326937,
+        "images": 942,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1855,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9326145552560647,
+        "wer": 0.03831807084577476,
+        "word_recall": 0.9644046722271131
+      },
+      "train|jpeg|blur=0.5": {
+        "cer": 0.026573378453765072,
+        "images": 945,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1956,
+        "sensitive_located_rate": 0.9994887525562373,
+        "sensitive_read_exact_rate": 0.9207566462167689,
+        "wer": 0.03337425464749211,
+        "word_recall": 0.9690722553490003
+      },
+      "train|jpeg|font=sans": {
+        "cer": 0.027580243120425386,
+        "images": 949,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1970,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9345177664974619,
+        "wer": 0.03167448807345936,
+        "word_recall": 0.9705791376125709
+      },
+      "train|jpeg|font=serif": {
+        "cer": 0.03166314336035235,
+        "images": 938,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1841,
+        "sensitive_located_rate": 0.9994568169473113,
+        "sensitive_read_exact_rate": 0.9179793590439979,
+        "wer": 0.040010083549409395,
+        "word_recall": 0.9629069432440219
+      },
+      "train|jpeg|font_size=14": {
+        "cer": 0.03394282446558467,
+        "images": 410,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 967,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8624612202688728,
+        "wer": 0.06798617113223855,
+        "word_recall": 0.9362834917891097
+      },
+      "train|jpeg|font_size=18": {
+        "cer": 0.0327723841385228,
+        "images": 446,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 999,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.950950950950951,
+        "wer": 0.03543876567020251,
+        "word_recall": 0.9667137346741975
+      },
+      "train|jpeg|font_size=22": {
+        "cer": 0.02489107177347946,
+        "images": 474,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 927,
+        "sensitive_located_rate": 0.9989212513484358,
+        "sensitive_read_exact_rate": 0.9439050701186623,
+        "wer": 0.017864167948213584,
+        "word_recall": 0.98429956010157
+      },
+      "train|jpeg|font_size=28": {
+        "cer": 0.02633369896794959,
+        "images": 557,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 918,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9498910675381264,
+        "wer": 0.019817102273812025,
+        "word_recall": 0.9818247771053285
+      },
+      "train|jpeg|layout=chat": {
+        "cer": 0.032031097455601516,
+        "images": 517,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 981,
+        "sensitive_located_rate": 0.9989806320081549,
+        "sensitive_read_exact_rate": 0.9204892966360856,
+        "wer": 0.03999936026612929,
+        "word_recall": 0.9640149697725746
+      },
+      "train|jpeg|layout=dialog": {
+        "cer": 0.02682846013561639,
+        "images": 470,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 929,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9364908503767492,
+        "wer": 0.03379095803140659,
+        "word_recall": 0.9682022241677999
+      },
+      "train|jpeg|layout=form": {
+        "cer": 0.027358356351181223,
+        "images": 438,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 942,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9299363057324841,
+        "wer": 0.035662438875305624,
+        "word_recall": 0.9669735635696821
+      },
+      "train|jpeg|layout=log": {
+        "cer": 0.03165616717099286,
+        "images": 462,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 959,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9197080291970803,
+        "wer": 0.03316445690057849,
+        "word_recall": 0.9683266860694909
+      },
+      "train|jpeg|scale=0.85": {
+        "cer": 0.029755673317719517,
+        "images": 959,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1919,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9088066701406983,
+        "wer": 0.0398302434666071,
+        "word_recall": 0.9624480679026134
+      },
+      "train|jpeg|scale=1.0": {
+        "cer": 0.029453150503998087,
+        "images": 928,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1892,
+        "sensitive_located_rate": 0.9994714587737844,
+        "sensitive_read_exact_rate": 0.9445031712473573,
+        "wer": 0.03179041478922154,
+        "word_recall": 0.9710947657126574
+      },
+      "train|jpeg|theme=dark": {
+        "cer": 0.028636131842514463,
+        "images": 933,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1856,
+        "sensitive_located_rate": 0.9994612068965517,
+        "sensitive_read_exact_rate": 0.9224137931034483,
+        "wer": 0.03496270404670102,
+        "word_recall": 0.9682714136427516
+      },
+      "train|jpeg|theme=light": {
+        "cer": 0.030562693533075207,
+        "images": 954,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1955,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9304347826086956,
+        "wer": 0.03662812778773881,
+        "word_recall": 0.9653150089649264
+      },
+      "train|png|blur=0.0": {
+        "cer": 0.03160795414121497,
+        "images": 942,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1855,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9412398921832884,
+        "wer": 0.03437916920033036,
+        "word_recall": 0.9675993574326348
+      },
+      "train|png|blur=0.5": {
+        "cer": 0.025788194470043817,
+        "images": 945,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1956,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9268916155419223,
+        "wer": 0.029515959312521923,
+        "word_recall": 0.9718782883198878
+      },
+      "train|png|font=sans": {
+        "cer": 0.026916196300168987,
+        "images": 949,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1970,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9355329949238579,
+        "wer": 0.028563600851958887,
+        "word_recall": 0.9728857897853311
+      },
+      "train|png|font=serif": {
+        "cer": 0.030412138651132202,
+        "images": 938,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1841,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9321021184139054,
+        "wer": 0.03531042927110343,
+        "word_recall": 0.9666072457505042
+      },
+      "train|png|font_size=14": {
+        "cer": 0.03221272904379516,
+        "images": 410,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 967,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8934850051706308,
+        "wer": 0.05676750216076059,
+        "word_recall": 0.9459118409680207
+      },
+      "train|png|font_size=18": {
+        "cer": 0.03188781658841337,
+        "images": 446,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 999,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.950950950950951,
+        "wer": 0.03402672544427607,
+        "word_recall": 0.9671097947375672
+      },
+      "train|png|font_size=22": {
+        "cer": 0.02404573355039545,
+        "images": 474,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 927,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9460625674217907,
+        "wer": 0.015825614248417438,
+        "word_recall": 0.9856228318014377
+      },
+      "train|png|font_size=28": {
+        "cer": 0.026037454862806952,
+        "images": 557,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 918,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9455337690631809,
+        "wer": 0.0192634452738693,
+        "word_recall": 0.9821684262777067
+      },
+      "train|png|layout=chat": {
+        "cer": 0.029616196890703307,
+        "images": 517,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 981,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9296636085626911,
+        "wer": 0.03412980200236702,
+        "word_recall": 0.9677094328759236
+      },
+      "train|png|layout=dialog": {
+        "cer": 0.026345793100209503,
+        "images": 470,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 929,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.93756727664155,
+        "wer": 0.03148110202484958,
+        "word_recall": 0.9706424752715013
+      },
+      "train|png|layout=form": {
+        "cer": 0.026851024193570036,
+        "images": 438,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 942,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.940552016985138,
+        "wer": 0.03126910146699267,
+        "word_recall": 0.9705837408312958
+      },
+      "train|png|layout=log": {
+        "cer": 0.031458441269150005,
+        "images": 462,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 959,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9280500521376434,
+        "wer": 0.030415723473824152,
+        "word_recall": 0.9705005210017607
+      },
+      "train|png|scale=0.85": {
+        "cer": 0.029189183793408506,
+        "images": 959,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1919,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9197498697238145,
+        "wer": 0.036068796068796066,
+        "word_recall": 0.9663256645074827
+      },
+      "train|png|scale=1.0": {
+        "cer": 0.028108571907437957,
+        "images": 928,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1892,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9482029598308668,
+        "wer": 0.027756505013446366,
+        "word_recall": 0.9732141266986055
+      },
+      "train|png|theme=dark": {
+        "cer": 0.026974409730682953,
+        "images": 933,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 1856,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9267241379310345,
+        "wer": 0.029845771323555908,
+        "word_recall": 0.9718208352852149
+      },
+      "train|png|theme=light": {
+        "cer": 0.030306720412738016,
+        "images": 954,
+        "ocr_empty": 1,
+        "ocr_failures": 0,
+        "sensitive_entities": 1955,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9406649616368287,
+        "wer": 0.033925401213577226,
+        "word_recall": 0.9677704272251124
+      },
+      "validation|jpeg|blur=0.0": {
+        "cer": 0.03443726397952251,
+        "images": 134,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 483,
+        "sensitive_located_rate": 0.9958592132505176,
+        "sensitive_read_exact_rate": 0.8923395445134575,
+        "wer": 0.03594294058182635,
+        "word_recall": 0.9655172413793104
+      },
+      "validation|jpeg|blur=0.5": {
+        "cer": 0.050472714480453804,
+        "images": 127,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 470,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9212765957446809,
+        "wer": 0.048939641109298535,
+        "word_recall": 0.9538837997239302
+      },
+      "validation|jpeg|font=sans": {
+        "cer": 0.040152658347106115,
+        "images": 134,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 484,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8842975206611571,
+        "wer": 0.04252307343865013,
+        "word_recall": 0.9588924749447936
+      },
+      "validation|jpeg|font=serif": {
+        "cer": 0.044064466775618066,
+        "images": 127,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 469,
+        "sensitive_located_rate": 0.9957356076759062,
+        "sensitive_read_exact_rate": 0.929637526652452,
+        "wer": 0.041596717030404774,
+        "word_recall": 0.961263445874526
+      },
+      "validation|jpeg|font_size=14": {
+        "cer": 0.033194831286242635,
+        "images": 54,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 262,
+        "sensitive_located_rate": 0.9923664122137404,
+        "sensitive_read_exact_rate": 0.7938931297709924,
+        "wer": 0.06679721496953873,
+        "word_recall": 0.935378590078329
+      },
+      "validation|jpeg|font_size=18": {
+        "cer": 0.04280368836028331,
+        "images": 73,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 271,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.940959409594096,
+        "wer": 0.04391730970753548,
+        "word_recall": 0.9579879965704488
+      },
+      "validation|jpeg|font_size=22": {
+        "cer": 0.04411057247529882,
+        "images": 65,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 225,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9466666666666667,
+        "wer": 0.026742827469816953,
+        "word_recall": 0.9761132026483188
+      },
+      "validation|jpeg|font_size=28": {
+        "cer": 0.050980220549623666,
+        "images": 69,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 195,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9641025641025641,
+        "wer": 0.02188287153652393,
+        "word_recall": 0.9795340050377834
+      },
+      "validation|jpeg|layout=chat": {
+        "cer": 0.04072485607202195,
+        "images": 59,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 205,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8731707317073171,
+        "wer": 0.04918254289960816,
+        "word_recall": 0.9536549114984462
+      },
+      "validation|jpeg|layout=dialog": {
+        "cer": 0.05196709293801417,
+        "images": 73,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 310,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8903225806451613,
+        "wer": 0.051362683438155136,
+        "word_recall": 0.9515490333100396
+      },
+      "validation|jpeg|layout=form": {
+        "cer": 0.035986159169550176,
+        "images": 50,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 136,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9411764705882353,
+        "wer": 0.02953456007422298,
+        "word_recall": 0.9721663831761249
+      },
+      "validation|jpeg|layout=log": {
+        "cer": 0.038765822784810125,
+        "images": 79,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 302,
+        "sensitive_located_rate": 0.9933774834437086,
+        "sensitive_read_exact_rate": 0.9304635761589404,
+        "wer": 0.037555358724534985,
+        "word_recall": 0.9636846767050488
+      },
+      "validation|jpeg|scale=0.85": {
+        "cer": 0.04470966061973787,
+        "images": 122,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 454,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8766519823788547,
+        "wer": 0.04682400200853628,
+        "word_recall": 0.9561888024102435
+      },
+      "validation|jpeg|scale=1.0": {
+        "cer": 0.03955290110575424,
+        "images": 139,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 499,
+        "sensitive_located_rate": 0.9959919839679359,
+        "sensitive_read_exact_rate": 0.9338677354709419,
+        "wer": 0.037839658657085114,
+        "word_recall": 0.9634516056591063
+      },
+      "validation|jpeg|theme=dark": {
+        "cer": 0.04268087592274602,
+        "images": 127,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 444,
+        "sensitive_located_rate": 0.9954954954954955,
+        "sensitive_read_exact_rate": 0.9166666666666666,
+        "wer": 0.044073518379594896,
+        "word_recall": 0.9590522630657664
+      },
+      "validation|jpeg|theme=light": {
+        "cer": 0.041443776756608146,
+        "images": 134,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 509,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8978388998035364,
+        "wer": 0.040286229434302455,
+        "word_recall": 0.9608970024791526
+      },
+      "validation|png|blur=0.0": {
+        "cer": 0.03416075463350661,
+        "images": 134,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 483,
+        "sensitive_located_rate": 0.9958592132505176,
+        "sensitive_read_exact_rate": 0.8923395445134575,
+        "wer": 0.03425811524205324,
+        "word_recall": 0.9671459058744244
+      },
+      "validation|png|blur=0.5": {
+        "cer": 0.049953827887955674,
+        "images": 127,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 470,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9212765957446809,
+        "wer": 0.043794704479859455,
+        "word_recall": 0.9585267913163509
+      },
+      "validation|png|font=sans": {
+        "cer": 0.039785384081055836,
+        "images": 134,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 484,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8822314049586777,
+        "wer": 0.03935224505973614,
+        "word_recall": 0.9621765471943831
+      },
+      "validation|png|font=serif": {
+        "cer": 0.04364720609200598,
+        "images": 127,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 469,
+        "sensitive_located_rate": 0.9957356076759062,
+        "sensitive_read_exact_rate": 0.9317697228144989,
+        "wer": 0.038114779580923956,
+        "word_recall": 0.9640614313250015
+      },
+      "validation|png|font_size=14": {
+        "cer": 0.032220750955055326,
+        "images": 54,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 262,
+        "sensitive_located_rate": 0.9923664122137404,
+        "sensitive_read_exact_rate": 0.816793893129771,
+        "wer": 0.057658833768494344,
+        "word_recall": 0.9446257615317668
+      },
+      "validation|png|font_size=18": {
+        "cer": 0.04340505144995323,
+        "images": 73,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 271,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9298892988929889,
+        "wer": 0.04334571782414023,
+        "word_recall": 0.9579879965704488
+      },
+      "validation|png|font_size=22": {
+        "cer": 0.04342597046959997,
+        "images": 65,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 225,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9333333333333333,
+        "wer": 0.023886797351681165,
+        "word_recall": 0.9778008568090354
+      },
+      "validation|png|font_size=28": {
+        "cer": 0.05014878347628216,
+        "images": 69,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 195,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9641025641025641,
+        "wer": 0.02188287153652393,
+        "word_recall": 0.9803211586901763
+      },
+      "validation|png|layout=chat": {
+        "cer": 0.039700938912715894,
+        "images": 59,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 205,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8634146341463415,
+        "wer": 0.04566950412106472,
+        "word_recall": 0.9567625996486961
+      },
+      "validation|png|layout=dialog": {
+        "cer": 0.05154353669463224,
+        "images": 73,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 310,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9,
+        "wer": 0.04647099930118798,
+        "word_recall": 0.9574889354763568
+      },
+      "validation|png|layout=form": {
+        "cer": 0.03607266435986159,
+        "images": 50,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 136,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9558823529411765,
+        "wer": 0.027833616823875057,
+        "word_recall": 0.9727849079944333
+      },
+      "validation|png|layout=log": {
+        "cer": 0.03853095332278481,
+        "images": 79,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 302,
+        "sensitive_located_rate": 0.9933774834437086,
+        "sensitive_read_exact_rate": 0.9205298013245033,
+        "wer": 0.034632418069087685,
+        "word_recall": 0.9658990256864481
+      },
+      "validation|png|scale=0.85": {
+        "cer": 0.044058675462199465,
+        "images": 122,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 454,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.8744493392070485,
+        "wer": 0.043873964348481044,
+        "word_recall": 0.9593899071051971
+      },
+      "validation|png|scale=1.0": {
+        "cer": 0.03940098982194398,
+        "images": 139,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 499,
+        "sensitive_located_rate": 0.9959919839679359,
+        "sensitive_read_exact_rate": 0.935871743486974,
+        "wer": 0.03419043341567483,
+        "word_recall": 0.9663709858522345
+      },
+      "validation|png|theme=dark": {
+        "cer": 0.042061286268123,
+        "images": 127,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 444,
+        "sensitive_located_rate": 0.9954954954954955,
+        "sensitive_read_exact_rate": 0.9099099099099099,
+        "wer": 0.04169792448112028,
+        "word_recall": 0.9611152788197049
+      },
+      "validation|png|theme=light": {
+        "cer": 0.041255253132241466,
+        "images": 134,
+        "ocr_empty": 0,
+        "ocr_failures": 0,
+        "sensitive_entities": 509,
+        "sensitive_located_rate": 1.0,
+        "sensitive_read_exact_rate": 0.9037328094302554,
+        "wer": 0.03611674554879423,
+        "word_recall": 0.964841108857336
+      }
+    },
+    "ocr_engine": {
+      "language": "eng",
+      "name": "tesseract",
+      "oem": 1,
+      "psm": 6,
+      "version": "tesseract 5.3.4"
+    },
+    "overall": {
+      "by_label": {
+        "ACCOUNT_NUMBER": {
+          "entities": 1016,
+          "located": 1016,
+          "read_exact": 988
+        },
+        "EMAIL": {
+          "entities": 2718,
+          "located": 2717,
+          "read_exact": 2492
+        },
+        "PASSWORD": {
+          "entities": 1346,
+          "located": 1346,
+          "read_exact": 907
+        },
+        "PAYMENT_CARD": {
+          "entities": 1128,
+          "located": 1128,
+          "read_exact": 1112
+        },
+        "PERSON": {
+          "entities": 3506,
+          "located": 3506,
+          "read_exact": 3354
+        },
+        "PHONE": {
+          "entities": 1544,
+          "located": 1540,
+          "read_exact": 1491
+        },
+        "SSN": {
+          "entities": 752,
+          "located": 752,
+          "read_exact": 708
+        }
+      },
+      "cer": 0.03081506203050148,
+      "images": 5076,
+      "ocr_empty": 2,
+      "ocr_failures": 0,
+      "sensitive_entities": 12010,
+      "sensitive_located_rate": 0.9995836802664446,
+      "sensitive_read_exact_rate": 0.920233139050791,
+      "wer": 0.03589029319347304,
+      "word_recall": 0.9670236480745329
+    },
+    "schema_version": "safeshare-images-v2",
+    "source_text_manifest_sha256": "d4af5f7f73c18ac4f3f56606aeb3d023bf0179926b1d794e7123da5095cbe84b",
+    "splits": {
+      "test": {
+        "documents": 300,
+        "entity_counts": {
+          "ACCOUNT_NUMBER": 133,
+          "EMAIL": 226,
+          "PASSWORD": 131,
+          "PAYMENT_CARD": 127,
+          "PERSON": 380,
+          "PHONE": 143,
+          "SSN": 100
+        },
+        "groups": 289,
+        "images": 780,
+        "jpeg": {
+          "by_label": {
+            "ACCOUNT_NUMBER": {
+              "entities": 133,
+              "located": 133,
+              "read_exact": 127
+            },
+            "EMAIL": {
+              "entities": 226,
+              "located": 226,
+              "read_exact": 206
+            },
+            "PASSWORD": {
+              "entities": 132,
+              "located": 132,
+              "read_exact": 92
+            },
+            "PAYMENT_CARD": {
+              "entities": 127,
+              "located": 127,
+              "read_exact": 121
+            },
+            "PERSON": {
+              "entities": 380,
+              "located": 380,
+              "read_exact": 323
+            },
+            "PHONE": {
+              "entities": 143,
+              "located": 143,
+              "read_exact": 141
+            },
+            "SSN": {
+              "entities": 100,
+              "located": 100,
+              "read_exact": 98
+            }
+          },
+          "cer": 0.03158128452649613,
+          "images": 390,
+          "ocr_empty": 0,
+          "ocr_failures": 0,
+          "sensitive_entities": 1241,
+          "sensitive_located_rate": 1.0,
+          "sensitive_read_exact_rate": 0.8928283642224013,
+          "wer": 0.04529922642494424,
+          "word_recall": 0.9627687342793413
+        },
+        "negative_documents": 45,
+        "pages": 390,
+        "png": {
+          "by_label": {
+            "ACCOUNT_NUMBER": {
+              "entities": 133,
+              "located": 133,
+              "read_exact": 128
+            },
+            "EMAIL": {
+              "entities": 226,
+              "located": 226,
+              "read_exact": 206
+            },
+            "PASSWORD": {
+              "entities": 132,
+              "located": 132,
+              "read_exact": 94
+            },
+            "PAYMENT_CARD": {
+              "entities": 127,
+              "located": 127,
+              "read_exact": 124
+            },
+            "PERSON": {
+              "entities": 380,
+              "located": 380,
+              "read_exact": 334
+            },
+            "PHONE": {
+              "entities": 143,
+              "located": 143,
+              "read_exact": 142
+            },
+            "SSN": {
+              "entities": 100,
+              "located": 100,
+              "read_exact": 98
+            }
+          },
+          "cer": 0.03041811234718867,
+          "images": 390,
+          "ocr_empty": 0,
+          "ocr_failures": 0,
+          "sensitive_entities": 1241,
+          "sensitive_located_rate": 1.0,
+          "sensitive_read_exact_rate": 0.9073327961321515,
+          "wer": 0.04088557733377628,
+          "word_recall": 0.9667077974467277
+        },
+        "shortfalls": {}
+      },
+      "train": {
+        "documents": 1500,
+        "entity_counts": {
+          "ACCOUNT_NUMBER": 268,
+          "EMAIL": 979,
+          "PASSWORD": 422,
+          "PAYMENT_CARD": 320,
+          "PERSON": 1151,
+          "PHONE": 502,
+          "SSN": 169
+        },
+        "groups": 1483,
+        "images": 3774,
+        "jpeg": {
+          "by_label": {
+            "ACCOUNT_NUMBER": {
+              "entities": 268,
+              "located": 268,
+              "read_exact": 263
+            },
+            "EMAIL": {
+              "entities": 979,
+              "located": 978,
+              "read_exact": 894
+            },
+            "PASSWORD": {
+              "entities": 422,
+              "located": 422,
+              "read_exact": 290
+            },
+            "PAYMENT_CARD": {
+              "entities": 320,
+              "located": 320,
+              "read_exact": 317
+            },
+            "PERSON": {
+              "entities": 1151,
+              "located": 1151,
+              "read_exact": 1125
+            },
+            "PHONE": {
+              "entities": 502,
+              "located": 502,
+              "read_exact": 490
+            },
+            "SSN": {
+              "entities": 169,
+              "located": 169,
+              "read_exact": 152
+            }
+          },
+          "cer": 0.029604593318650237,
+          "images": 1887,
+          "ocr_empty": 1,
+          "ocr_failures": 0,
+          "sensitive_entities": 3811,
+          "sensitive_located_rate": 0.9997376016793492,
+          "sensitive_read_exact_rate": 0.9265284702177906,
+          "wer": 0.03580364191006275,
+          "word_recall": 0.9667786087957079
+        },
+        "negative_documents": 225,
+        "pages": 1887,
+        "png": {
+          "by_label": {
+            "ACCOUNT_NUMBER": {
+              "entities": 268,
+              "located": 268,
+              "read_exact": 259
+            },
+            "EMAIL": {
+              "entities": 979,
+              "located": 979,
+              "read_exact": 904
+            },
+            "PASSWORD": {
+              "entities": 422,
+              "located": 422,
+              "read_exact": 289
+            },
+            "PAYMENT_CARD": {
+              "entities": 320,
+              "located": 320,
+              "read_exact": 319
+            },
+            "PERSON": {
+              "entities": 1151,
+              "located": 1151,
+              "read_exact": 1138
+            },
+            "PHONE": {
+              "entities": 502,
+              "located": 502,
+              "read_exact": 493
+            },
+            "SSN": {
+              "entities": 169,
+              "located": 169,
+              "read_exact": 157
+            }
+          },
+          "cer": 0.028649525839291312,
+          "images": 1887,
+          "ocr_empty": 1,
+          "ocr_failures": 0,
+          "sensitive_entities": 3811,
+          "sensitive_located_rate": 1.0,
+          "sensitive_read_exact_rate": 0.9338756231960116,
+          "wer": 0.031905736699624924,
+          "word_recall": 0.969775625158882
+        },
+        "shortfalls": {}
+      },
+      "validation": {
+        "documents": 200,
+        "entity_counts": {
+          "ACCOUNT_NUMBER": 107,
+          "EMAIL": 154,
+          "PASSWORD": 119,
+          "PAYMENT_CARD": 117,
+          "PERSON": 222,
+          "PHONE": 127,
+          "SSN": 107
+        },
+        "groups": 194,
+        "images": 522,
+        "jpeg": {
+          "by_label": {
+            "ACCOUNT_NUMBER": {
+              "entities": 107,
+              "located": 107,
+              "read_exact": 105
+            },
+            "EMAIL": {
+              "entities": 154,
+              "located": 154,
+              "read_exact": 142
+            },
+            "PASSWORD": {
+              "entities": 119,
+              "located": 119,
+              "read_exact": 71
+            },
+            "PAYMENT_CARD": {
+              "entities": 117,
+              "located": 117,
+              "read_exact": 116
+            },
+            "PERSON": {
+              "entities": 222,
+              "located": 222,
+              "read_exact": 217
+            },
+            "PHONE": {
+              "entities": 127,
+              "located": 125,
+              "read_exact": 112
+            },
+            "SSN": {
+              "entities": 107,
+              "located": 107,
+              "read_exact": 101
+            }
+          },
+          "cer": 0.04202544499610875,
+          "images": 261,
+          "ocr_empty": 0,
+          "ocr_failures": 0,
+          "sensitive_entities": 953,
+          "sensitive_located_rate": 0.9979013641133263,
+          "sensitive_read_exact_rate": 0.906610703043022,
+          "wer": 0.04208155523944997,
+          "word_recall": 0.9600225225225225
+        },
+        "negative_documents": 30,
+        "pages": 261,
+        "png": {
+          "by_label": {
+            "ACCOUNT_NUMBER": {
+              "entities": 107,
+              "located": 107,
+              "read_exact": 106
+            },
+            "EMAIL": {
+              "entities": 154,
+              "located": 154,
+              "read_exact": 140
+            },
+            "PASSWORD": {
+              "entities": 119,
+              "located": 119,
+              "read_exact": 71
+            },
+            "PAYMENT_CARD": {
+              "entities": 117,
+              "located": 117,
+              "read_exact": 115
+            },
+            "PERSON": {
+              "entities": 222,
+              "located": 222,
+              "read_exact": 217
+            },
+            "PHONE": {
+              "entities": 127,
+              "located": 125,
+              "read_exact": 113
+            },
+            "SSN": {
+              "entities": 107,
+              "located": 107,
+              "read_exact": 102
+            }
+          },
+          "cer": 0.04163423962577461,
+          "images": 261,
+          "ocr_empty": 0,
+          "ocr_failures": 0,
+          "sensitive_entities": 953,
+          "sensitive_located_rate": 0.9979013641133263,
+          "sensitive_read_exact_rate": 0.906610703043022,
+          "wer": 0.0387624466571835,
+          "word_recall": 0.9630749170222854
+        },
+        "shortfalls": {}
+      }
+    },
+    "warnings": [
+      "Some images had OCR failures or no words. They stay in the data and count as errors."
+    ]
+  },
+  "images": {
+    "gcs_uri": "gs://ai-caps-proj26-bucket/safeshare/data/images/20261111T013302Z-e38b2785",
+    "manifest_sha256": "892c312736871686c80224bf9ef78ef8a55954e405a5d97ad67d590c30d5773f",
+    "verified_files": 5089
+  },
+  "label_mapping": [
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "company_name",
+      "test": 54616,
+      "train": 84917
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "date",
+      "test": 73620,
+      "train": 76743
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "url",
+      "test": 37729,
+      "train": 44584
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "occupation",
+      "test": 36678,
+      "train": 30840
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "country",
+      "test": 23361,
+      "train": 27652
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "time",
+      "test": 24417,
+      "train": 20926
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "city",
+      "test": 18263,
+      "train": 19177
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "state",
+      "test": 18175,
+      "train": 18749
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "customer_id",
+      "test": 20464,
+      "train": 17180
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "street_address",
+      "test": 16826,
+      "train": 16753
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "date_time",
+      "test": 13198,
+      "train": 14296
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "user_name",
+      "test": 15771,
+      "train": 12778
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "date_of_birth",
+      "test": 18044,
+      "train": 12676
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "employee_id",
+      "test": 8865,
+      "train": 12040
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "biometric_identifier",
+      "test": 11351,
+      "train": 11123
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "education_level",
+      "test": 9356,
+      "train": 10568
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "vehicle_identifier",
+      "test": 4558,
+      "train": 9336
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "ipv4",
+      "test": 6075,
+      "train": 8947
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "coordinate",
+      "test": 7651,
+      "train": 8428
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "postcode",
+      "test": 6242,
+      "train": 7997
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "certificate_license_number",
+      "test": 2994,
+      "train": 7886
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "employment_status",
+      "test": 10988,
+      "train": 7605
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "fax_number",
+      "test": 6407,
+      "train": 7324
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "license_plate",
+      "test": 4075,
+      "train": 7117
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "medical_record_number",
+      "test": 11089,
+      "train": 7084
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "race_ethnicity",
+      "test": 9220,
+      "train": 7077
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "bank_routing_number",
+      "test": 8341,
+      "train": 6729
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "language",
+      "test": 8628,
+      "train": 6491
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "county",
+      "test": 8416,
+      "train": 6327
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "health_plan_beneficiary_number",
+      "test": 10539,
+      "train": 6313
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "mac_address",
+      "test": 4241,
+      "train": 6075
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "swift_bic",
+      "test": 5539,
+      "train": 5788
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "http_cookie",
+      "test": 4880,
+      "train": 5748
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "device_identifier",
+      "test": 2506,
+      "train": 5250
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "ipv6",
+      "test": 3139,
+      "train": 4790
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "religious_belief",
+      "test": 6240,
+      "train": 4712
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "blood_type",
+      "test": 5532,
+      "train": 4491
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "gender",
+      "test": 7621,
+      "train": 4295
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "age",
+      "test": 7142,
+      "train": 4133
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "political_view",
+      "test": 6376,
+      "train": 3972
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "national_id",
+      "test": 2838,
+      "train": 3149
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "tax_id",
+      "test": 1298,
+      "train": 2563
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "unique_id",
+      "test": 1770,
+      "train": 2381
+    },
+    {
+      "mapped_to": "(not mapped)",
+      "source_label": "sexuality",
+      "test": 3303,
+      "train": 2341
+    },
+    {
+      "mapped_to": "ACCOUNT_NUMBER",
+      "source_label": "account_number",
+      "test": 16672,
+      "train": 9985
+    },
+    {
+      "mapped_to": "EMAIL",
+      "source_label": "email",
+      "test": 53681,
+      "train": 49521
+    },
+    {
+      "mapped_to": "PASSWORD",
+      "source_label": "password",
+      "test": 6967,
+      "train": 8248
+    },
+    {
+      "mapped_to": "PASSWORD",
+      "source_label": "pin",
+      "test": 6444,
+      "train": 6511
+    },
+    {
+      "mapped_to": "PASSWORD",
+      "source_label": "api_key",
+      "test": 4666,
+      "train": 6075
+    },
+    {
+      "mapped_to": "PAYMENT_CARD",
+      "source_label": "credit_debit_card",
+      "test": 12836,
+      "train": 9010
+    },
+    {
+      "mapped_to": "PAYMENT_CARD",
+      "source_label": "cvv",
+      "test": 4838,
+      "train": 3532
+    },
+    {
+      "mapped_to": "PERSON",
+      "source_label": "first_name",
+      "test": 83576,
+      "train": 57855
+    },
+    {
+      "mapped_to": "PERSON",
+      "source_label": "last_name",
+      "test": 59230,
+      "train": 42814
+    },
+    {
+      "mapped_to": "PHONE",
+      "source_label": "phone_number",
+      "test": 23880,
+      "train": 24935
+    },
+    {
+      "mapped_to": "SSN",
+      "source_label": "ssn",
+      "test": 6054,
+      "train": 4919
+    }
+  ],
+  "prepared": {
+    "gcs_uri": "gs://ai-caps-proj26-bucket/safeshare/data/prepared/20261111T013302Z-e38b2785",
+    "manifest_sha256": "d4af5f7f73c18ac4f3f56606aeb3d023bf0179926b1d794e7123da5095cbe84b",
+    "verified_files": 13
+  },
+  "raw": {
+    "gcs_uri": "gs://ai-caps-proj26-bucket/safeshare/data/raw/20261111T013302Z-e38b2785",
+    "manifest_sha256": "b5626ee364c5223833b3f41c67423081503bea56f21b48de177a98b6ff920d3f",
+    "verified_files": 3
+  },
+  "run_id": "20261111T013302Z-e38b2785",
+  "schema_version": "safeshare-data-receipt-v3",
+  "source_commit": "b11fc8d70a5c889cc4765d0c7a0f42998ad45da7",
+  "split_summary": {
+    "test": {
+      "documents": 10000,
+      "examples": 16247,
+      "groups": 5012,
+      "source_split": "test"
+    },
+    "train": {
+      "documents": 79598,
+      "examples": 132044,
+      "groups": 39927,
+      "source_split": "train"
+    },
+    "validation": {
+      "documents": 19899,
+      "examples": 33152,
+      "groups": 9981,
+      "source_split": "train"
+    }
+  },
+  "status": "complete",
+  "test_hashes": {
+    "image_records": "ec47b71ae8059c7c2ffe4c11f2c48a47e98645f9f2b55a1ca677ef1893b34805",
+    "text_documents": "24104d47b1c1d544834e35f0d2a146c3b85f8932ce7fc9c3c0d6c3e40451fada",
+    "text_examples": "c2aef687749db5d10459c07315e73112118d372eb09a17d10d5a3fcc4f04f2f9"
+  }
+}

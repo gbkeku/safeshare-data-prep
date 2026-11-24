@@ -1,0 +1,17 @@
+{
+  "model_id": "gravitee-io/bert-small-pii-detection",
+  "model_revision": "f8c27a85c51c0168f07b9dcf00265bf0a4097939",
+  "max_length": 512,
+  "stride": 64,
+  "epochs": 2,
+  "learning_rate": 5e-05,
+  "batch_size": 32,
+  "eval_batch_size": 64,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "eval_save_steps": 1000,
+  "keep_local_checkpoints": 2,
+  "seed": 42,
+  "threshold_step": 0.02,
+  "recall_floor": 0.95
+}
