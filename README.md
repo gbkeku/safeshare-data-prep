@@ -62,7 +62,7 @@ Other insights from Notebook 1 (sections 11 to 13): the entity mix by category, 
 ### Steps
 1. Open the notebook [`notebooks/01_SafeShare_Data_Prep.ipynb`](https://colab.research.google.com/github/gbkeku/safeshare-data-prep/blob/main/notebooks/01_SafeShare_Data_Prep.ipynb) in Colab (this link, or the Open in Colab badge at the top of the notebook), then Runtime > Change runtime type > **CPU**.
 2. Add the Colab Secrets above.
-3. Run every cell from top to bottom (Runtime > Run all) and keep the tab open. Section 1 downloads the code from this repository, which is public, so no token is needed. Section 3 asks you to sign in to Google Cloud once.
+3. Run every cell from top to bottom and keep the tab open. Section 1 downloads the code from this repository, which is public, so no token is needed. Section 3 asks you to sign in to Google Cloud once.
 4. At the end, section 15 uploads the raw data, the prepared data and the screenshots to your bucket, each with a SHA-256 manifest, and publishes a receipt last (`<GCS_DATASET_LOCATION>/receipts/<run ID>.json`), which it also downloads. Every file is written create-only, so a run never replaces an earlier one.
 
 **To run without Google Cloud:** set `UPLOAD = False` in section 3. Then no secrets are needed, nothing is uploaded, and section 15 asks for Google Drive access instead, to save a copy of the prepared data and a run record.
